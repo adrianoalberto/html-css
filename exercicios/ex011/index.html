@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em html5</title>
+
+    <style>
+        body{
+            background-color: rgb(243, 246, 246);
+        }
+    </style>
+</head>
+<body>
+    <h1>Himagem dinamica</h1>   
+    <p>Tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua a tela </p>
+
+    <picture>
+        <source media="(max-width: 350px)" srcset="imagens/lago-200.jpg" type="image/jpg">
+        <source media="(max-width: 700px)" srcset="imagens/lago-350.jpg" type="image/jpg">
+        <source media="(max-width: 1100px)" srcset="imagens/lago-650.jpg" type="image/jpg">
+        <img src="imagens/lago-1050.jpg" alt="foto paisagem grende flexivel">
+    </picture>
+     
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em html5</p>
+    <audio src="media/rock.mp3.mp3" controls autoplay></audio>
+    <!--mp3 wav ogg-->
+    <p>a outra maneira e a mais correta é essa a baixo</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/rock.mp3.mp3" type="audio/mpeg">
+        <source src="media/rock.mp3.ogg" type="audio/ogg">
+        <source src="media/rock.mp3.wav" type="meadia/wav"> <!--tente evitar ao maximo arquivos wav pois são muito pesados-->
+        <p>infelizmente o seu navegador não consegue reproduzir o audio. <a href="media/rock.mp3.mp3">click aqui para baixar o audio mp3</a></p>
+
+    </audio>
+
+    
+</body>
+</html>
