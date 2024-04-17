@@ -5,7 +5,7 @@ Estou aprendendo a criar sites e agora vou gerenciar meus repositorios!
 
 Meu primeiro projeto
 
-<a href="https://adrianoalberto.github.io/projeto-android/index.html" target="_blank"> Projeto Android</a>
+<a href="https://adrianoalberto.github.io/projeto-android/index.html" target="_blank" rel="external">Projeto Android</a>
 
 Exercícios:
 
